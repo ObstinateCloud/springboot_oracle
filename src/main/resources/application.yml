@@ -1,0 +1,16 @@
+server:
+  port: 8899
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@192.168.20.200:1521:orcl
+    username: test_statis
+    password: test_statis
+    validation-query: SELECT 'x'
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+
+logging:
+  level:
+    com.baomidou.mybatisplus.samples: debug
